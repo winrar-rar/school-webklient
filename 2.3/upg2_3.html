@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html lang ="sv">
+
+	<head>
+		<title>Uppgift 2.3</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="upg2_3.css">
+	</head>
+
+	<body>
+		<article>
+			<header>
+				<h1>Uppgift 2.3</h1>
+			</header>
+
+			<h2>Boxmodell</h2>
+			<p>
+				I HTML fungerar alla taggar som små boxar som har något i sig. Detta inehåll kan vara texter eller bilder. För att förstå boxmodellen måste man förstå padding, kantliner och marginaler. Om man tänker sig allt som en stor box finns inehåller i mitten. Runt den finns padding som i sin tur har kantliner runt sig. Tills sits ytterst existerar marginaler.
+			</p>
+
+
+			<h3>Innehåll</h3>
+			<p>
+				Innehållet (eng: content) är bilder, text eller vad som nu som skall visas i boxen hamnar i mitten av den.
+			</p>
+			<p>Exempel: Content</p>
+
+
+			<h3>Paddning</h3>
+			<p>
+				Padding är det som sperarerar text, bilder, etc från kantliner. Det finns två sätt att hantera paddings på. Det ena är att använda sig av padding-top, -left, -bottom samt -right. Det andra sättet är att använda sig av enbart padding. Syntaxen för detta är <code>padding: top right bot left;</code>. Detta längd enheterna skall skrivas in utan något komma mellan dem. I följande fall har det tidigare sättet använts. 
+			</p>
+
+			<h4>Padding-top:</h4>
+			<p>
+				Här demonstreras padding-top. padding-top: 100px, padding-right: 50px, padding-bottom: 50px, padding-left: 50px.
+			</p>
+			<p id="p-top">Content</p>
+
+			<h4>Padding-right:</h4>
+			<p>
+				Här demonstreras padding-right. padding-top: 50px, padding-right: 100px, padding-bottom: 50px, padding-left: 50px.
+			</p>
+			<p id="p-right">Content</p>
+
+			<h4>Padding-bottom:</h4>
+			<p>
+				Här demonstreras padding-bottom. padding-top: 50px, padding-right: 50px, padding-bottom: 100px, padding-left: 50px.
+			</p>
+			<p id="p-bot">Content</p>
+
+			<h4>Padding-left:</h4>
+			<p>
+				Här demonstreras padding-left. padding-top: 50px, padding-right: 50px, padding-bottom: 50px, padding-left: 100px.
+			</p>
+			<p id="p-left">Content</p>
+
+
+			<h3>Kantlinje</h3>
+			<p>
+				Kantlinjer (eng: border) är en linje som dras runt kanterna på boxen. Det är möjligt att ha kanter på alla sidor, en sida eller andra kominationer av sidor.<br> 
+				Syntaxen är <code>Border: border-width border-style border-color;</code>.<br>
+			</p>
+			<p>
+				Det går att specifiera de olika variablerna så att de endast påverkar en sida. Man behöver inte heller alltid följa syntaxen ovan utan kan använda var och en av variablerna. Detta görs med <code>border-(top, right, bottom, left)</code>, <code>border-(top, right, bottom, left)-width</code>, <code>border-(top, right, bottom, left)-style</code> och med <code>border-(top, right, bottom, left)-color;</code>.<br>
+				I följande exempel kommer den sistnämnda metoden att användas.
+			</p>
+
+			<h4>Border-top:</h4>
+			<p>	
+
+				border-top-width: 10px;
+				border-top-style: solid;
+				border-top-color: red;
+			</p>
+			<p id="b-top">Content</p>
+
+			<h4>Border-top-style:</h4>
+			<p>
+				Det finns många border-stilar som kan väljas. Dessa fungerar för alla och inte enbart en viss kant.
+			</p>
+			<p id="dotted">dotted</p>
+			<p id="dashed">dashed</p>
+			<p id="solid">solid</p>
+			<p id="double">double</p>
+			<p id="groove">groove</p>
+			<p id="ridge">ridge</p>
+			<p id="inset">inset</p>
+			<p id="outset">outset</p>
+			<p id="none">none</p>
+			<p id="hidden">hidden</p>
+
+			<h4>Border-top-width:</h4>
+			<p>
+				När det kommer till bredden på bordern finns det två sätt: antingen genom fördefinierade eller genom egen specifierad bredd.<br>
+				Det finns tre fördefinierade: thin, medium och thick.
+			</p>
+			<p id="thin">thin</p>
+			<p id="medium">medium</p>
+			<p id="thick">thick</p>
+
+			<h4>Border-top-color:</h4>
+			<p>Svart är standard färg men det går att ändra detta genom <code>border-color</code> eller <code>border-(top, right, bottom, left)-color</code> för enbart en sida.</p>
+			<p id="red-t-c">Red color</p>
+
+			<h4>Border-right:</h4>
+			<p>Samma parametrar och variabler gäller för border-right som för border-top.</p>
+
+			<h4>Border-bottom:</h4>
+			<p>Samma parametrar och variabler gäller för border-bottom som för border-top.</p>
+
+			<h4>Border-left:</h4>
+			<p>Samma parametrar och variabler gäller för border-left som för border-top.</p>
+
+
+			<h3>Marginal</h3>
+			<p>
+				Marginaler är vad separerar en tagg från en annan. Det mellanrum som oftast förekommer mellan toppen och botten av två paragrafer är tack vare marginaler. Marginaler är transparenta. 
+			</p>
+			<p id="m1">Tagg 1</p>
+			<p id="m2">Tagg 2</p>
+
+			<h4>Margin-top:</h4>
+			<p>
+				Om man tänker sig allt som boxar som tidigare nämnts så hanterar margin-top toppen på margin-boxen.<br>
+				Exempel:
+			</p>
+			<p>Paragraf 1.</p>
+			<p id="m-top">Paragraf 2 med margin-top 1cm.</p>
+			<p>Paragraf 3.</p>
+
+			<h4>Margin-right:</h4>
+			<p>
+				Fungerar som med margin-top fast på högersida.
+			</p>
+			<p>Paragraf 1.</p>
+			<p id="m-right">Paragraf 2 med margin-right 1cm.</p>
+			<p>Paragraf 3.</p>
+
+			<h4>Margin-bottom:</h4>
+			<p>Paragraf 1.</p>
+			<p id="m-bot">Paragraf 2 med margin-bottom 1cm.</p>
+			<p>Paragraf 3.</p>
+
+			<h4>Margin-left:</h4>
+			<p>Paragraf 1.</p>
+			<p id="m-left">Paragraf 2 med margin-left 1cm.</p>
+			<p>Paragraf 3.</p>
+
+
+			<h3>Outlines</h3>
+			<p>
+				Outlines är inte det samma som kantlinjer även om man vid ett första ögonkast skulle kunna tro det. Outlines tar tillexempel inte upp någon plats vilket kantlinjer gör. Outliners behöver inte heller vara rektangulära. En annan vesentlig skillnad mellan de bägga är att till skillnad från kantlinjer kan en outliners inte enbart finnas på en sida, dvs som border-top, border-left etc.<br>
+				Outliners kan göras på två sätt. Det första är via <code>outline: färg stil tjocklek</code>.<br>
+				Det andra sättet är separat via <code>outline-style:</code>, <code>outline-width:</code> samt <code>outline-color:</code>.
+			</p>
+
+			<h4>Outline-style:</h4>
+			<p>
+				Samma stilar som för kantlinjer finns att väljas mellan när det kommer till outliners: dotted, dashed, solid, double, groove, ridge, inset, outset, none och hidden.
+			</p>
+			<p id="o-dotted">dotted</p>
+			<p id="o-dashed">dashed</p>
+			<p id="o-solid">solid</p>
+			<p id="o-double">double</p>
+			<p id="o-groove">groove</p>
+			<p id="o-ridge">ridge</p>
+			<p id="o-inset">inset</p>
+			<p id="o-outset">outset</p>
+			<p id="o-none">none</p>
+			<p id="o-hidden">hidden</p>
+
+			<h4>Outline-width:</h4>
+			<p>
+				Tjockleken på outliners kan regleras med hjälp av antingen thin, medium eller thick. Det går även att skriva in egna värden.
+			</p>
+			<p id="o-thin">thin</p>
+			<p id="o-medium">medium</p>
+			<p id="o-thick">thick</p>
+
+			<h4>Outline-color:</h4>
+			<p>
+				Precis som med mycket annat kan outliners ha olika färger. Svart är standard om inger annat anges.
+			</p>
+			<p id="o-col">Röd outliner</p>
+
+			<h2>Synlighet</h2>
+			<p></p>
+
+			<h3>Visibility:</h3>
+			<p>
+				<code>Visible</code> är standard om inget annat anges. <code>hidden</code> gör elementet osynligt men den kommer fortfarande ta upp platsen som den skulle göra om den var synlig.
+			<p>Exempel på visible nedan:</p>
+			<p>Text</p>
+			<p id="vis">visible</p>
+			<p>Text</p>
+			<p>Exempel på hidden nedan:</p>
+			<p>Text</p>
+			<p id="v-hidden">hidden</p>
+			<p>Text</p>
+
+			<h3>Clip:</h3>
+			<p>
+				Clip låter dig ta en bit av en bild och enbart visar denna del av bilden. Rektangeln är specifierad som fyra kordinater. Man måste dock ha med <code>position: absolute;</code> för att det skall fungera. Detta kan dock skapa en del problem då bilden klipper över andra taggar eller element.
+			</p>
+			<img id="clip-bild" src="https://www.w3.org/TR/html5/images/HTML5_Logo.png" alt="HTML logo">
+
+			<h3 id="display">Display:</h3>
+			<p>
+				Display talar om vilken typ av box skall användas för ett HTML-element. Det finns många olika men här är två exempel på hur det fungerar: 
+			</p>
+			<p>Inline. Detta är standard om inget annat anges. Elemented visas precis som &lt;span&gt;.</p>
+			<p id="dis-in">Text</p>
+			<p id="dis-in">inline</p>
+			<p id="dis-in">Text</p>
+
+			<p>Block. Elementet visas som ett none element. Som det kan ses tar den inte upp någon yta heller.</p>
+			<p>Text</p>
+			<p id="dis-none"></p>
+			<p>Text</p>
+
+			<h3>Overflow:</h3>
+			<p>
+				Overflow specifierar vad som händer när ett element är för stor för dess box. Påminner lite om <code>clip:</code>.<br>
+				Visible visar allt oavsett om elementets innehåll är för stort eller inte. Om det är för stort för boxen kommer innehållet täcka över annat. Hidden tar däremot detta problem och kapar det som inte får plats. Detta kan naturligtvis vara mindre bra ifall viktiga delar på innehåller tas bort.<br>
+				Scroll och auto är lite lika genom det att båda ser till att det går att scrolla ifall mer plats behövs. Den stora skillnaden mellan de bägge är att där auto bara gör att det går att scrolla om det behövs, visar scroll alltid scroll möjlighet även om innehållet är förlitet för att faktiskt kunna scrollas. 
+			</p>
+			<h4>visible</h4>
+			<p></p>
+			<div id="over-visible">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+			<h4>hidden</h4>
+			<p></p>
+			<div id="over-hidden">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>			
+			<h4>scroll</h4>
+			<p></p>
+			<div id="over-scroll">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+			<h4>auto</h4>
+			<p></p>
+			<div id="over-auto">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+
+
+			<h2>Övriga tips och tricks</h2>
+			<h3>Transparant</h3>
+			<p>
+				Transparans eller opacity reglerar hur synlig ett element är. ettvärde från 1.0 till 0.0 används i <code>opacity:</code>.<code>opacity: 0.5;</code> som används i detta exempel säger att bilden kommer vara halvt transparent. Det är viktigt att tänka på att använda även <code>filter: alpha(opacity=nummer mellan 0-100);</code> för att det även skall gå att användas i IE8 eller äldre versioner.<br>
+				Möjligheten finns även att använda sig av rgb-varianten: <code>rgba(röd, grön, blå, alpha)</code> där rgb som vanliugt har ett span på 0-255 och alpha 0.0-1.0.
+			</p>
+			<img src="https://www.w3.org/TR/html5/images/HTML5_Logo.png" alt="HTML logo" height="128" width="128">
+			<img id="trans" src="https://www.w3.org/TR/html5/images/HTML5_Logo.png" alt="HTML logo" height="128" width="128">
+
+			<h3>Border-radius:</h3>
+			<p id="border-r">
+				Border-radius tillåter en användare att ha rundade hörn istället för fyrkantiga som är standard.
+			</p>
+
+			<h3>Multiplla bakgrundsbilder</h3>
+			<p>
+				I vissa fall kan det vara så att man vill ha text eller något annat över en bakgrundsbild. Om texten är lång är det då bra om bilden skulle bli större. Vanliga bakgrundsbilder blir inte större och eventuell text kommer då att gå utanför bilden. Detta löser multippla bakgrundsbilder.
+			</p>
+			<div id="multi-back">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<p>
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+				</p>
+			</div>
+
+			<h3>Box-shadow:</h3>
+			<p>Box-shadow ger boxen en skugga. Skuggan kan antingen vara samma färg eller en annan. Det går även att ge en innre skugga. Syntaxen är: box-shadow: nummer nummer nummer färg;</p>
+			<p id="bs-o">Yttre skugga</p>
+			<p id="bs-i">Innre skugga med blurr</p>
+
+			<h3>Gradienter</h3>
+			<p>
+				Gradienter gör att man får smidig övergång mellan olika färger. Det finns två olika typer av gradienter: linear-gradients och radial-gradients.<br>
+				Skillnaden mellan de bägge är att radial-gradients definieras utifrån dess center medan linear-gradients går upp, höger, ner, vänster beroende på vilken inställning som har gjorts.<br>
+				Det är viktigt att tänka på att alla läsare inte stödjer gradients, och alla webbläsare stödjer inte gradients på samma sätt. Därför kan särskilda prefix för dessa användas. Standard syntaxen måste dock läggas längst ner i dessa fall.
+			</p>
+
+			<h4>Linear-gradient</h4>
+			<p>
+				Syntax: <code>background: linear-gradient(to riktning(exempel: top, right, bottom right, etc), färg1, färg2, ...);</code><br>
+				minnst två olika färger måste användas.<br>
+				Anglar (eng: angels) kan också användas för mer kontroll. Enda skillnaden är att istället för färdritning <code>to right</code> att man skriver <code>90deg</code>.
+			</p>
+			<div id="lin-grad"></div>
+
+			<h4>Radial-gradient</h4>
+			<p>
+				Precis som med linear-gradient krävs det att minst två färger används.<br>
+				Syntaxen: <code>background: radial-gradient(form-storlek, start-färg, ..., slut-färg);</code>
+			</p>
+			<div id="rad-grad"></div>
+
+
+		</article>
+	</body>
+</html>

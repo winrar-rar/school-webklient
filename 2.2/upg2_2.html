@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html lang ="sv">
+
+	<head>
+		<title>Uppgift 2.2</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="upg2_2.css">
+	</head>
+
+	<body>
+		<article>
+			<header>
+				<h1>Uppgift 2.2</h1>
+			</header>
+
+			<h2>Fontfamiljer</h2>
+			<p>
+				I HTML finns det en rad med font-familjer som: Serif, Sans-serif, Monospace med flera. Det är viktigt att kunna skilja mellan generisk font familj som Serif och Monospace och faktisk font familj som Times New Roman och Arial där den tidigare är grupper som påmminer om varandra utseendemässigt medan den senare är den aktuella fonten som skall användas. I fall en viss webbläsare inte stödjer en specifik font kan en "backup"-font användas om en eller flera sådana har angetts. I fall så är fallet tas nästa font och testas i fall den fungerar.
+			</p>
+			<p>
+				CSS Syntaxen är: <code>font-family: "font", initial, inherit;</code><br>
+				Varje värde skall separeras med ett komma.
+			</p>
+			<p>
+				När man arbetar med en extern css-fil läggs fonter i denna fil under den sector som skall ha den specifika fonten.<br>
+				I förljande exempel har p-taggar fått ett id tilldelats till sig som sedan används i CSS-filen för att get den specifika fonten.<br>
+			</p>
+			<p>
+				Det första exemplet nedan ser ut följande i HTML-filen: <code>&lt;p id="Serif"&gt; ... &lt;/p&gt;</code> <br>
+				Detta id används sedan i CSS-filen för att göra: 
+				<code>#Serif { font-family: "Times New Roman", Georgia, Serif;}</code>
+			</p>
+			<p id="Serif">
+				Detta är ett exempel på Serif.<br>
+				Detta är gjort med: <code>font-family: "Times New Roman", Georgia, Serif;</code>
+			</p>
+			<p id="Sans-Serif">
+				Detta är ett exempel på Sans-serif.<br>
+				Detta är gjort med: <code>font-family: "Verdana", Geneva, Sans-serif;</code>
+			</p>
+			<p id="Monospace">
+				Detta är ett exempel på Monospace.<br>
+				Detta är gjort med: <code>font-family: "Courier New", Courier, Monospace;</code>
+			</p>
+			<p>All text blir dock i den valda fonten vilken syns ovan.</p>
+
+			<h2>Storleks enheter</h2>
+			<p>
+				Det finns en rad med storleks enheter som kan användas när man arbetar med fonter.<br>
+			</p>
+			<p id="xx-small">xx-small</p>
+			<p id="x-small">x-small</p>
+			<p id="small">small</p>
+			<p id="medium">medium</p>
+			<p id="large">large</p>
+			<p id="x-large">x-large</p>
+			<p id="xx-large">xx-large</p>
+			<p>
+				Som kan ses ovan har vi varierande storlekar som går fron väldigt litet till väldigt stort.<br> Medium är standard storleken om inget annat anges.<br> Värt att notera är att dessa har fasta storlekar och kan därför inte ändras. Om en annan storlek behövs kan % eller em användas.<br>
+			</p>
+			<p>
+				Enheterna % och em är som tidigare nämnts inte fasta enheter utan relativa. Detta gör att de kan få en storlek som passar till ett visst syfte.<br>
+				Nedan används 150% samt 2em vilket ger följande storlekar: 
+			</p>
+			<p id="percent150">%</p>
+			<p id="em2">em</p>
+
+			<h2>Färger</h2>
+			<p>
+				Färger kan användas till mycket i CSS. Från att ge en viss färg till en viss text till att ge en hel sida en viss färg. I dett fall prtar vi dock om färg till texter. Det finns både fördefinierade färger och egengjorda.<br>
+				Skillnaden mellan de bägge är att den senare använder RGB- eller HEX-värde för att få fram en färg medan den tidigare har sina fasta fördefinierade färger.
+			</p>
+			<p>
+				Exempel på färger. Den första använder en fördefinierad färg: <code>color: red;</code><br>
+				medan den andra använder en egen: <code>color: ff00ff;</code>
+			</p>
+			<p id="red">Exempel.</p>
+			<p id="egen">Exempel.</p>
+
+			<h2>Teckensnitt</h2>
+			<h3>Font-family</h3>
+			<p>
+				Som tidigare nämnts är en fontfamilj är huvudgruppen där fonter som påminner om varandra.<br>
+				I regel sätter man flera fonter i fall en eller flera fonter inte stödjs i webbläsaren.
+			</p>
+			<h3>Font-size:</h3>
+			<p>
+				Font-size används för att sätta storleken på texten. Detta kan göras antingen med absoluta enheter eller med relativa.
+			</p>
+			<p id="px">Detta är ett exempel på 20px.</p>
+			<p id="em">Detta är ett exempel på 2em.</p>
+
+			<h3>Font-size-adjust:</h3>
+			<p>
+				Olika fonter har olika storleker normalt. I fall en backup font har en annan storlek kan den justeras med font-size-adjust. 
+			</p>
+			<p id="fadjust1">Exempel på Verdana med 0.6 i adjust</p>
+			<p id="fadjust2">Exempel på New Times Roman med 0.6 i adjust</p>
+
+			<p>
+				Som kan ses ovan har de blivit rätt lika till skillnad från hur de såg ut förrut högst upp på sidan.
+			</p>
+
+			<h3>Font-style:</h3>
+			<p>
+				Font-style används för att göra en text normal, italic, oblique. 
+			</p>
+			<p id="normal">Normal</p>
+			<p id="italic">Italic</p>
+			<p id="oblique">Oblique</p>
+
+			<h3>Font-variant:</h3>
+			<p>
+				Med font-variant kan man sätta <code>font-variant: small-caps;</code> eller <code>font-variant: normal</code>.<br>
+				Small-caps konverterar alla små bokstäver till stora, dock med en mindre font än bokstäver som redan var stora innan. Normal är standard. 
+			</p>
+			<p id="vnormal">Detta är ett exempel. Normal används här.</p>
+			<p id="vsmall-c">Detta är ett exempel. Small-caps används här.</p>
+
+			<h3>Font-weight:</h3>
+			<p>
+				Sätter tjockleken på tecken-karaktärerna. Normal, bold, bolder, lighter och 100 - 900 (Syntax: x00) finns att välja mellan. 400 motsvarar normal och 700 är samma som bold ifall nummer används.<br>
+				Exempel: 
+			</p>
+			<p id="wnormal">Normal.</p>
+			<p id="wbold">Bold.</p>
+			<p id="wbolder">Bolder.</p>
+			<p id="wlighter">Lighter</p>
+			<p id="w100">100</p>
+			<p id="w200">200</p>
+			<p id="w300">300</p>
+			<p id="w400">400</p>
+			<p id="w500">500</p>
+			<p id="w600">600</p>
+			<p id="w700">700</p>
+			<p id="w800">800</p>
+			<p id="w900">900</p>
+
+			<h2>Text</h2>
+			<h3>Letter-spacing</h3>
+			<p>
+				Öker eller minskar tätheten mellan tecken-karaktärer i en text.
+			</p>
+			<p id="letter-s1">Letter-spacing med 3px.</p>
+			<p id="letter-s2">Letter-spacing med -3px</p>
+
+			<h3>Word-spacing</h3>
+			<p>
+				Ökar eller minskar tätheten mellan ord i en mening.
+			</p>
+			<p id="word-s">Exempel på word-spacing med 20px.</p>
+
+			<h3>Line-height</h3>
+			<p>
+				Ökar eller minskar tätheten mellan meningar på höjden. 
+			</p>
+			<p id="sline-h">
+				Textrad 80%.<br>
+				Textrad 80%.<br>
+				Textrad 80%.
+			</p>
+			<p id="bline-h">
+				Textrad 180%.<br>
+				Textrad 180%.<br>
+				Textrad 180%.
+			</p>
+
+			<h3>Text-align</h3>
+			<p>
+				Justerar texten antingen till höger (right), vänster (left) eller centrering (center).
+			</p>
+			<p id="right"> Right</p>
+			<p id="left"> Left</p>
+			<p id="center"> Center</p>
+
+			<h3>Text-decoration</h3>
+			<p>
+				Ger en text genomstruken (line-through), understruken (underline) eller överstruknen (overline). 
+			</p>
+			<p id="line-t">Line-through</p>
+			<p id="underl">Underline</p>
+			<p id="overl">Overline</p>
+
+			<h3>Text-shadow</h3>
+			<p>
+				Sätter en skugga till texten. Det går även att sätta att denna skugga har en egen färg som aviker från den "riktiga" texten.
+			</p>
+			<p id="text-shadow">Exempel</p>
+
+			<h3>Text-indent</h3>
+			<p>
+				Anger hur stor indragingen (indentation) första raden i en mening skall ha.
+			</p>
+			<p id="text-ind">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+			<h3>Text-transform</h3>
+			<p>
+				Förvandlar så att en text kan bestå av bara versaler (uppercase) eller gemener (lowercase) eller med med stor första bokstav (capitalize).
+			</p>
+			<p id="uppercase">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			<p id="lowercase">
+				Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+			</p>
+			<p id="capitalize">
+				At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+			</p>
+
+			<h3>White-space</h3>
+			<p>
+				Olika hanteringar av radbrytning. Normal, nowrap, pre, pre-line, pre-wrap finns att välja mellan.<br>
+				Exempel på respektive radbrytningsmetod:
+			</p>
+			<p id="white-normal">
+				Vivamus pellentesque massa tempus, suscipit elit vitae, rutrum metus. Quisque egestas elit lorem, ac molestie quam lacinia eu. Donec sit amet congue justo, a rhoncus ligula. Mauris id augue eget mauris dignissim malesuada eget vel velit. Sed orci quam, viverra vitae nunc eu, pretium ultricies lectus. Curabitur sit amet rutrum dolor. Suspendisse potenti. Cras placerat iaculis fermentum. Ut tincidunt commodo enim, quis fringilla velit. Pellentesque vitae porta odio. Pellentesque vitae nulla id sem hendrerit ullamcorper. Nullam eu ex eget justo finibus feugiat vestibulum sed lacus. Proin id consectetur risus, sed varius tortor. Cras pulvinar mi eu iaculis dignissim. Fusce eu eros eget lorem laoreet laoreet. Morbi eu arcu et orci luctus rutrum. 
+			</p>
+			<p id="nowrap">
+				Vivamus pellentesque massa tempus, suscipit elit vitae, rutrum metus. Quisque egestas elit lorem, ac molestie quam lacinia eu. Donec sit amet congue justo, a rhoncus ligula. Mauris id augue eget mauris dignissim malesuada eget vel velit. Sed orci quam, viverra vitae nunc eu, pretium ultricies lectus. Curabitur sit amet rutrum dolor. Suspendisse potenti. Cras placerat iaculis fermentum. Ut tincidunt commodo enim, quis fringilla velit. Pellentesque vitae porta odio. Pellentesque vitae nulla id sem hendrerit ullamcorper. Nullam eu ex eget justo finibus feugiat vestibulum sed lacus. Proin id consectetur risus, sed varius tortor. Cras pulvinar mi eu iaculis dignissim. Fusce eu eros eget lorem laoreet laoreet. Morbi eu arcu et orci luctus rutrum. 
+			</p>
+			<p id="pre">
+				Vivamus pellentesque massa tempus, suscipit elit vitae, rutrum metus. Quisque egestas elit lorem, ac molestie quam lacinia eu. Donec sit amet congue justo, a rhoncus ligula. Mauris id augue eget mauris dignissim malesuada eget vel velit. Sed orci quam, viverra vitae nunc eu, pretium ultricies lectus. Curabitur sit amet rutrum dolor. Suspendisse potenti. Cras placerat iaculis fermentum. Ut tincidunt commodo enim, quis fringilla velit. Pellentesque vitae porta odio. Pellentesque vitae nulla id sem hendrerit ullamcorper. Nullam eu ex eget justo finibus feugiat vestibulum sed lacus. Proin id consectetur risus, sed varius tortor. Cras pulvinar mi eu iaculis dignissim. Fusce eu eros eget lorem laoreet laoreet. Morbi eu arcu et orci luctus rutrum. 
+			</p>
+			<p id="pre-line">
+				Vivamus pellentesque massa tempus, suscipit elit vitae, rutrum metus. Quisque egestas elit lorem, ac molestie quam lacinia eu. Donec sit amet congue justo, a rhoncus ligula. Mauris id augue eget mauris dignissim malesuada eget vel velit. Sed orci quam, viverra vitae nunc eu, pretium ultricies lectus. Curabitur sit amet rutrum dolor. Suspendisse potenti. Cras placerat iaculis fermentum. Ut tincidunt commodo enim, quis fringilla velit. Pellentesque vitae porta odio. Pellentesque vitae nulla id sem hendrerit ullamcorper. Nullam eu ex eget justo finibus feugiat vestibulum sed lacus. Proin id consectetur risus, sed varius tortor. Cras pulvinar mi eu iaculis dignissim. Fusce eu eros eget lorem laoreet laoreet. Morbi eu arcu et orci luctus rutrum. 
+			</p>
+			<p id="pre-wrap">
+				Vivamus pellentesque massa tempus, suscipit elit vitae, rutrum metus. Quisque egestas elit lorem, ac molestie quam lacinia eu. Donec sit amet congue justo, a rhoncus ligula. Mauris id augue eget mauris dignissim malesuada eget vel velit. Sed orci quam, viverra vitae nunc eu, pretium ultricies lectus. Curabitur sit amet rutrum dolor. Suspendisse potenti. Cras placerat iaculis fermentum. Ut tincidunt commodo enim, quis fringilla velit. Pellentesque vitae porta odio. Pellentesque vitae nulla id sem hendrerit ullamcorper. Nullam eu ex eget justo finibus feugiat vestibulum sed lacus. Proin id consectetur risus, sed varius tortor. Cras pulvinar mi eu iaculis dignissim. Fusce eu eros eget lorem laoreet laoreet. Morbi eu arcu et orci luctus rutrum. 
+			</p>
+
+			<h2>Stycken</h2>
+			<h3>p:first-line</h3>
+			<p id="first-line">
+				Används för att ge första raden i en tagg en stil.<br>
+				Men där andra raden och följande inte får någon. 
+			</p>
+
+			<h3>p:first-letter</h3>
+			<p id="first-letter">
+				Fungerar precis som vid p:first-line dock med skillnaden att det är första bokstaven istället. 
+			</p>
+
+			<h2>Listor</h2>
+			<h3>List-style-image</h3>
+			<p>
+				Ger en bild till list-item markörer.
+			</p>
+			<ul id="image">
+				<li>Exempel</li>
+			</ul>
+
+			<h3>List-style-position</h3>
+			<p>
+				Anger om list-item markörer skall vara inuti innehållsflödet med inside-värdet eller utanför med outside-värdet.
+
+			</p>
+			<ul id="inside">
+				<li>Inside</li>
+			</ul>
+			<ul id="outside">
+				<li>Outside</li>
+			</ul>
+
+			<h3>List-style-type</h3>
+			<p>
+				Används för att ge list-item markers olika typer av siffror, bokstäver och symboler som list markörer.
+			</p>
+			<ul id="list-type1">
+				<li>Exempel 1</li>
+				<li>Exempel 2</li>
+			</ul>
+			<ul id="list-type2">
+				<li>Exempel 1</li>
+				<li>Exempel 2</li>
+			</ul>
+			<ul id="list-type3">
+				<li>Exempel 1</li>
+				<li>Exempel 2</li>
+			</ul>
+
+		</article>
+	</body>
+
+
+</html>

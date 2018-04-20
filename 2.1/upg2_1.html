@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang ="sv">
+	<head>
+		<title>Uppgift 2.1</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="upg2_1.css">
+
+	</head>
+
+	<body>
+		<article>
+			<header>
+				<h1>Uppgift 2.1</h1>
+			</header>
+			<p>
+				<a href="../2.2/upg2_2.html">Text och Listor</a>
+
+			</p>
+			
+			<p>
+				Man skulle kunna varför man inte bara lägger allt i samma css internt i samma HTML-fil som man ändå skulle arbeta i, dvs internt. Anledning till detta är att om man använder en extern CSS-fil är att HTML-filen inte behöver bli särskilt långt och rörigt samt att det är möjligt att länka samma CSS-fil till flera olika HTML-filer.
+			</p>
+			
+			<h2>Arv</h2>
+			<p>
+				Det finns fyra stycken relationer i CSS: "Ancestor", "Descendant", "Parent", "Child", samt "Sibling".
+			</p>
+
+			<h3>Ancestor</h3>
+			<p>
+				En tagg som innehåller andra taggar är stamfader till dessa taggar. Boddy-taggen är ett exempel på en sådan tagg.
+			</p>
+
+			<h3>Descendent</h3>
+			<p>
+				En tagg som finns i en eller flera taggar är avkommling till denna/dessa. Body-taggen är detta gentemot html-taggen.
+			</p>
+
+			<h3>Parent</h3>
+			<p>
+				Den närmaste ancestor till en tagg. Html-taggen är detta gentemot body- samt head-taggen.
+			</p>
+
+			<h3>Child</h3>
+			<p>En tagg som är den första taggen till en annan tagg är dess barn.</p>
+
+			<h3>Sibling</h3>
+			<p>
+				Taggar som är barn till samma förälder är syskon. body- och head-taggen är syskon.
+			</p>
+				
+			<h2>Cascade</h2>
+			<p>
+				Prioritetsregler är viktigt då en tagg kan få egenskaper definierade till sig flera gånger. Dels genom arv, men kan även ha flera stilmallar tilldelade till sig. Faktum är att webbläsaren har sina egna stilmallar som används om inga andra har blivit specifierade.
+			</p>
+			<p>
+				Prioriteten ser därför ut så här i CSS.
+				Längs prioritet har webbläsarens inbyggda som används om inga andra anges av webbutvecklaren. Därefter kommer extern stilmall, intern stilmall och högst inline style (det vill säga specifica egenskaper som tilldelas direkt i html-koden). 
+			</p>
+			<p>
+				När det gäller arv så "vinner" närmaste stamfadder. 
+			</p>
+			<p>
+				Ett element kan även som tidigare nämndes ha flera stilmallar tilldelade till sig. Lösningen från Cascade är att den mest egenskaperna från den mest specifica stilen "vinner".<br>
+				Detta kan dock ibland vara svårt att veta och därför finns det en formel för detta.<br>
+				En tagg är värt 1 poäng.<br>
+				En klass selector är värd 10 poäng.<br>
+				En ID selector är värd 100 poäng.<br>
+				En inline stil är värd 1000 poäng.
+			</p>
+
+			<h2>Selectorer</h2>
+			<p>Selectorer pekar på det HTML-element som skall påverkas av en stil.</p>
+			
+			<h3>Tagg Selector</h3>
+			<p>
+				Tagg selector är en selektor som enkelt kan användas för att implementera stilar då det är vanliga taggar så som &lt;h2&gt; och &lt;p&gt; som är elementen. Fördelen är att mycket påverkas på en gång och det går snabbt att få ett resultat. <br>
+
+				Exempel: <code>p {color:red;}</code>. Detta skulle få alla paragrafer att vara röda i färg.
+			</p>
+			<h3>Attribut Selector</h3>
+			<p>
+				Ibland kan det vara så att en webbutvecklare vill att vissa element skall se ut på ett visst sätt beroende på vilka attribute de har. Attribute är den/de extra delar som finns i en specifik tagg.<br>
+
+				Exempel: <code>img[title~=picture]{border: 1px solid black;}</code>. Detta skulle få alla bilder som innehåller attributet titel och ordet picture att få en svart 1 pixel tjock ram runt sig.
+			</p>
+			<h3>Klass Selector</h3>
+			<p>
+				Istället för att använda taggar kan en webbutvecklare istället använda sig av klasser för att ge en element stilar. Notera punkten (.) innan klassnamn, alla klassers namn börjar med en punkt. Efter punkten måste ett bokstavstecken komma. Det duger alltså inte med en siffra.<br> 
+
+				Exempel: <code>.klassnamn{background: green;}</code>. Detta skulle få alla element med klassen "klassnamn" att få bakgrunden grön.
+			</p>
+			<h3>ID Selector</h3>
+			<p>
+				ID selector påminner lite om klass selectorn, skillnaden är att ID är unika och förekommer inte flera gånger i samma HTML-fil som klassnamn kan göra. Detta får effekten att en webbutvecklare vet exakt vad som kommer att påverkas.<br>
+				
+				Exempel: <code>#idnamn{background: green;}</code>.
+			</p>
+			<h3>Barn Selector</h3>
+			<p>
+				Om endast barn till en viss tagg skall få en stil-effekt kan barn selectorn användas. CSS tillåter väldigt specifika specifikationer över vilket barn som skall kunan få en effekt.
+
+				Exempel: <code>p:first-child{color:red}</code>. Endast första barnet får effekten.<br>
+				Exempel: <code>p:last-child{color:red}</code>. Endast sista barnet får effekten.<br>
+				Exempel: <code>p:nth-child(odd){color:red}</code>. Endast ojämna barn får effekten.<br>
+				Exempel: <code>p:nth-child(even){color:red}</code>. Endast jämna barn får effekten.<br>
+				Exempel: <code>p:nth-child(6n+1){color:red}</code>. Formlen innebär i detta exempel att första barnet får effekten. Därefter kommer vart 6:e barn få samma effekt.
+			</p>
+			<h2>Enheter</h2>
+			<p>Det finns två typer av enheter i CSS: absoluta och relativa.</p>
+
+			<p>
+				Absoluta enheter beskriver fasta mått. Dessa mått är alltid konsistenta.<br>
+				in = inch<br> 
+				cm = centermeter<br> 
+				mm = milimeter<br> 
+				pt = points<br> 
+				pc = picas.
+			</p>
+
+			<p>
+				Relativa enheterär motsattsen till fasta mått.<br>
+				em = en enhet som utgår från textens storlek. En besökare kan ändra den fontstorleken manuellt och är därför mycket praktiskt.<br> 
+				ex = En enhet som utgår från teckensnittet och höjden på bokstaven. Likt vid em kan en besökare även här ändra måttet genom att ändra storleken manuellt i webbläsaren.<br> 
+				px = pixels. Storleken på en pixel beror på resolutionen på datorenheten och kan därför variera mellan två olika sådana. <br> 
+				% = procent. Kan användas på både storleken på en text men även på andra områden på sidan och kan därför få varierande resultat.
+			</p>
+
+			<h2>CSS Uppbyggnad</h2>
+			<p>
+				En stilmall kan bestå av flera regler. Dessa regler består i sin tur av två huvuddelar. Den ena delen är en selector och den andra är ett deklarations block. Selectorn är det HTML-element som skall påverkas. Deklarationsblocket består av en eller flera deklarationer inom klammerparanteser ({}).<br>
+				En deklaration består av två delar, en egenskap som HTML-elemenet skall ha och ett värde till egenskapen. Dessa två åtskiljs av ett kolon-tecken (:).
+			</p>
+
+		</article>
+
+		<nav>
+
+		</nav>
+	</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+	<head>
+		<title>Uppgift 1.2</title>
+		<meta charset="utf-8">
+	</head>
+
+	<body>
+		<h1>Uppgift 1.2</h1>
+
+		<nav>
+			<a href="http//:www.website.domän">Exempel länk</a>
+
+			<p>
+				Nav-elementet. Det är i denna del som länkar till andra webbsidor (kan röra sig om absoluta länkar och relativa) och fungerar som en meny eller inehållsförteckning om ankare används. Det går att ha flera nav-element på en webbsida.
+			</p>
+		</nav>
+
+		<article>
+				<header>
+					<h2>HTML5 Struktur</h2>
+					
+					<p>
+						Istället för att använda <code>&lt;div id="header"&gt;</code>, <code>&lt;div ="footer"&gt;</code> med flera för att definiera olika delar på en webbsida, kan en webbutvecklare i HTML5 använda sig av <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code> etc istället.
+					</p>
+
+					<p>
+						Header-elementet, är i toppen av en webbsida, sektion eller artikel. Det går att ha flera header-taggar i en webbsida då den enbart definierar toppen för något. Oftast finns en rubrik och kanske lite sammanfattning.
+					</p>
+
+				</header>
+
+				<p>
+					Article-elementet innehåller ofta flera av de andra taggarna, exempelvis header-taggenoch footer-taggen. Article-taggen används för fristående information som skulle kunna existera utanför webbsidan. Det kan finnas flera article-taggar på samma webbsida.
+				</p>
+
+
+				<figure>
+					<img src="http://www.webbdesignguiden.se//wp-content/uploads/2013/07/html-5-struktur.jpg" alt="HTML5 struktur">
+					<figcaption>
+						Fig1. - HTML5 struktur.				
+						Figure-taggen används för bilder som är separerade från en text men hänvisad till den. Förenklat fungerar det som en motsvarighet till bilder i tidningar och böcker.
+						Img används som vanligt för att visa bilden och figcaption-taggen används för att ge bildtext till bilden.
+
+					</figcaption>
+				</figure>
+		
+				<aside>
+					<h3>&lt;aside&gt; Exempel</h3>
+					Aside-taggen kan användas på lite olika sätt. Dels kan det röra sig om en sidodel för hemisdan där reklam och dylikt kan visas, dte vill säga något som inte är relaterat till en artikel och då läggs den utanför. Aside-taggen kan även användas för något som är relativt för en article, tillexemepl när citat eller glosor skall visas. Då läggs den istället innuti article-taggen.
+				</aside>
+
+				<footer>
+					<p>
+						Footer-elementet. Den påminner om header-elementet men skillnaden är att den är till för slutnoter eller sidhuven på en artikel eller för själva webbsidan. 
+					</p>
+
+				</footer>
+
+		</article>
+		
+		<section>
+			<h2>&lt;section&gt; Exempel</h2>
+			
+			<p>Section används för det mesta när ingen av de övriga taggarna läpar sig. Den är lite som div-taggen men skillnaden mellan de båda är att section-taggen används när texter är relaterade till en viss grad men inte till den grad att du kan använda article-taggen. Div-taggen används då det inte finns någon sådan koppling. Section bör inte användas om det finns lämpligare taggar för att göra något, så som article-, aside-taggen med flera. </p> 
+
+			<details>
+				<summary>&lt;details&gt; och &lt;summary&gt;</summary>
+				<p>Details- och summary-taggarna används för att göra boxar som kan kollapse utan att behöva göra det i JavaScript. Värt att notera är att detta stöds inte fullt ut av alla webbläsare i dags datum och därför rekommenderas det istället att använda JavaScript.</p>
+			</details>
+
+
+		</section>
+
+
+
+	</body>
+
+</html>

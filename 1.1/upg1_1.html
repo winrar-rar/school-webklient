@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang ="sv">
+
+	<head>
+		<title>Uppgift 1.1</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Christian Andersson">
+		<meta name="description" content="Hemsida för HTMLs grunder.">
+		<meta name="keywords" content="HTML, guide">
+	</head>
+
+
+	<body>
+		<h1>Uppgift 1.1</h1>
+		
+		<h2>Begrepp</h2>
+		<h3>Doctype</h3>
+		<p>
+			Doctype är en instruktion till din webbläsare vilken HTML-version som din hemsida använder.
+		</p>
+		
+		<h3>Teckenkod</h3>
+		<p>
+			Teckenkod är en standard för hur en teckenuppsätning skall visas.
+			Skall det vara ett å eller ett kinesiskt tecken?
+		</p>
+		<p>
+			Exempel: <code>&lt;meta charset="utf-8"&gt;</code> gör att å, ä och ö fungerar på denna hemsida.
+		</p>
+		
+		<h3>Språk</h3>
+		<p>Deklarera vilket språk din sida är på.</p>
+		<p>
+			Exempel: <code>&lt;html lang="en"&gt;</code> för att deklarera att din sida är på engelska.
+		</p>
+		
+		<h3>Validering</h3>
+		<p>
+			Är ett verktyg som kollar att din kod är bra skriven, att alla taggar är stängda eller om det är problem med nästningen och mycket mera.
+		</p>
+		<p>Exempel på ett sådant verktug är: validator.w3.org</p>
+
+		<h2>Taggar</h2>
+		<h3>&lt;body&gt;</h3>
+		<p>
+			Används för att definiera hemsidans body, vilket inehåller all text, bilder, länkar etc.
+		</p>
+		
+		<h3>&lt;head&gt;</h3>
+		<p>
+			Head-taggen inehåller alla head attribute så som hemsidans titel, olika skripter och metainformation etc.
+		</p>
+		
+		<h3>&lt;html&gt;</h3>
+		<p>
+			Html-taggen berättar att detta är ett html-document och innehåller alla andra html-element förutom doctype-taggen.
+		</p>
+		
+		<h3>&lt;title&gt;</h3>
+		<p>Title-taggen är hemsidans titel och är placerad i hemsidans head-element.</p> 
+		<p>Exempel: Denna webbsida använder sig av <code>&lt;title&gt;Uppgift 1.1&lt;/title&gt;</code></p>
+
+
+		<h3>Metadata</h3>
+		<h4>Allmän beskriving</h4>
+		<p>
+			Meta är data om data, i detta fall om hemsidan. Meta-taggen ligger alltid i head-elementet.
+		</p>
+		
+		<h4>author</h4>
+		<p>
+			Exempel: Denna sida använder <code>&lt;meta name="author" content="Christian Andersson"</code>&gt;
+		</p>
+		<p>Meta-tagg som talar om vem som är författaren till webbsidan.</p>
+		
+		<h4>description</h4>
+		<p>Ger en beskriving om webbsidan.</p>
+		
+		<h4>generator</h4>
+		<p>
+			Denna meta-tagg ger information om vilka software paket som använts för att generera dokumentet.
+		</p>
+		
+		<h4>http-equiv</h4>
+		<p>
+			En meta-tagg som skickas innan resten av hemsidan. http-equiv-taggen ger ytterliggare information om webbsidan. Exempel om hemsidan skall skicka vidare besökaren till någon annan webbsida och mycket mer. 
+		</p>
+		
+		<h4>keywords</h4>
+		<p>
+			Keywords är en lista på olika relevanta nyckelord för webbsidan som används av sökmotorer för att hitta webbsidan och tala om vad hemsidan handlar om.
+		</p>
+		<p>Exempel: Denna sida använder <code>&lt;meta name="keywords" content="HTML, guide"&gt;</code></p>
+		
+		<h4>robots</h4>
+		<p>En meta-tagg som ger sökrobottar olika rättigheter på webbsidan.
+			Detta kan vara om indexering får ske (<code>index</code> alternativt <code>noindex</code>) eller om länkarna som finns på sidan får följas eller inte (<code>follow</code> alternativt <code>nofollow</code>).
+		</p>
+
+
+		<h3>Text</h3>
+		<h4>&lt;blockquote&gt;</h4>
+		<p>Används för att citera en text.</p> 
+		<p>Exempel:</p><blockquote>Denna text är inkapslad i blockquote.</blockquote>
+		
+		<h4>&lt;div&gt;</h4>
+		<p>
+			Används för att gruppera element vilket underlättar när CSS används. När div-taggen används blir det en radbrytning. Div brukade innan HTML5 användas för att skapa en bra struktur på en webbsida genom att göra <code>&lt;div id="header"&gt;</code> etc.
+		</p>
+		<p>Exempel:</p> <div>Denna text är inkapslad i div.</div>
+		
+		<h4>Headings</h4>
+		<p>Det finns 6 stycken heading-taggar eller rubrik-taggar, h1-h6.</p>
+		<h1>Exempel på h1</h1>
+		<h2>Exempel på h2</h2>
+		<h3>Exempel på h3</h3>
+		<h4>Exempel på h4</h4>
+		<h5>Exempel på h5</h5>
+		<h6>Exempel på h6</h6>
+		
+		<h4>&lt;p&gt;</h4>
+		<p>p definierar vanlig paragraf text. Detta är ett exempel på en sådan text.</p>
+		
+		<h4>&lt;pre&gt;</h4>
+		<p>
+			pre-taggen representerar preformaterad text. Den visar texten exakt så som den är skriven, varje tab och mellanslag syns. Precis som med div-taggen blir det en radbrytning.
+		</p>
+		<p>Exempel:</p> <pre>Denna		 text använder  pre-taggen.</pre>
+		
+		<h4>&lt;span&gt;</h4>
+		<p>
+			span-taggen påminner lite som div-taggen då båda kan användas för att gruppera element. Skillnaden är dock att span-taggen oftast används för mindre delar än div samt att det inte blir någon radbrytning när span-taggen används.
+		</p>
+		<p>Exempel: <span>Denna text är inkapslad i span.</span></p>
+
+
+		<h2>Hyperlänkar</h2>
+		<h3>&lt;a&gt;</h3>
+		<p>
+			a-taggen används för hyperlinker vilket är det som är till för att länka en webbsida till en annan.
+		</p>
+		
+		<h3>Relativ och absolut länk</h3>
+		<p>
+			Absolut länk används för att kunna skicka en användare från en webbplats till en annan www-webbplats. En relative länk används för att skicka en användare till en annan del på samma webbplats därav namnet relativ. Relative länkar fungerar endast om de finns på samma enhet.
+		</p>
+		<p>
+			Exempel: <code>&lt;a href="/page2/index.html"&gt;Länk namn&lt;/a&gt;</code> är en relativ länk medan <code>&lt;a href="http://wwww.dsv.su.se"&gt;DSV.su.se&lt;/a&gt;</code> blir en länk till: <a href="http://www.DSV.su.se/">DSV.su.se</a> vilket är en absolut länk.
+		</p> 
+		
+		<h3>Länk till ankare</h3>
+		<p>
+			Ankare används för att snabbt kunna länka en användare från en del till en annan. Många webbsidor har tillexempel en innehållsföretckning som användaren kan klicka på och direkt hoppa till denna del. Två delar behövs för att en ankarlänk skall fungera. Först behövs det ett ankare dit användaren skall hoppa till när denna trycker på länken. Ankaret ser ut som en vanlig länk men notera att den har id som attribut istället för href. Det andra som behövs är själva länken som användaren kan trycka på.
+		</p>
+		<p>
+			Exempel: Detta är ankaret <code>&lt;a id="Ankarlänk"&gt;Ankarnamn&lt;/a&gt;</code> vilket resulterar i: <a id="Ankarlänk">Ankarnamn</a>. Detta är länken: &lt;a href="#Ankarlänk"&gt;Länknamn&lt;/a&gt; vilket resulterar i: <a href="#Ankarlänk">Länknamn</a>
+		</p>
+		
+		<h3>Bild-länk</h3>
+		<p>Bilk-länk används för att visa bilder. 
+		<p>
+			Exempel: <code>&lt;a href="http://www.su.se/img/logo_su_se_big_dark_blue.gif"&gt;SU logga&lt;/a&gt;</code> resulterar i: <a href="http://www.su.se/img/logo_su_se_big_dark_blue.gif">SU logga</a>
+		</p>
+		
+		<h3>Länk till olika protokoll</h3>
+		<p>
+			Det är möjligt att göra länkar till olika protokoll. Användarens webbläsare måste dock kunna hantera detta för att det skall fungera.
+		</p>
+		<p>
+			Exempel: <code>&lt;a href="ftp://ftpserver.com/"&gt;ftpexempel&lt;/a&gt;</code> resulterar i: <a href="ftp://ftpserver.com">ftpexempel</a>
+		</p>
+		
+		<h3>Mailto-länk</h3>
+		<p>Mailto-länk är en länk till en mailadress.</p>
+		<p>
+			Exempel: <code>&lt;a href="mailto:name@website.domain"&gt;My mail&lt;/a&gt;</code> resulterar i: <a href="mailto:name@website.domain">My mail</a>
+		</p>
+
+
+		<h2>Listor</h2>
+		<h3>&lt;dl&gt;</h3>
+		<p>
+			dl-taggen används för att definiera en definitionslista. dl-taggen används tillsammans med dt-taggen samt dd-taggen.
+		</p>
+		
+		<h3>&lt;dt&gt;</h3>
+		<p>Används för att ange en definierad term eller namn.</p>
+		
+		<h3>&lt;dd&gt;</h3>
+		<p>Används för att ange en beskrivning till en term eller namn.</p>
+		<p>Exempel: </p>	
+			<dl>
+				<dt>Äpple</dt>
+				<dd>Frukt från äppelträd.</dd>
+				<dt>Banan</dt>
+				<dd>Bär från ett bananträd.</dd>
+			</dl>
+		
+		<h3>&lt;ol&gt;</h3>
+		<p>Används för att definiera en ordnad lista.</p>
+		
+		<h3>&lt;ul&gt;</h3>
+		<p>Används för att definiera en o-ordnad lista</p>
+		
+		<h3>&lt;li&gt;</h3>
+		<p>Används för att definiera ett list-element</p>
+		<p>Exempel på ordnad lista:</p> 
+			<ol><li>Första</li><li>Andra</li></ol>
+		<p>Exempel på o-ordnad lista:</p> 
+			<ul><li>Första</li><li>Andra</li></ul>
+
+
+		<h2>Tabeller</h2>
+		<h3>&lt;caption&gt;</h3>
+		<p>Används för att skapa en rubriker för tabeller. Måste ligga i table-taggen.</p>
+		
+		<h3>&lt;table&gt;</h3>
+		<p>Används för definiera en tabell.</p>
+		
+		<h3>&lt;td&gt;</h3>
+		<p>Används för standard celler som innehåller data.</p>
+		
+		<h3>&lt;th&gt;</h3>
+		<p>Används för header celler som innehåller sidhuvud data. Blir automatiskt fetstilade.</p>
+		
+		<h3>&lt;tr&gt;</h3>
+		<p>Används för att definiera rader i tabeller. Inehåller td- och/eller th-element.</p>
+		<p>Exempel:</p> 	
+			<pre>
+				<code>
+					&lt;table&gt;
+						&lt;caption&gt;Rubrik&lt;/caption&gt;
+							&lt;tr>
+								&lt;th&gt;th cell&lt;/th&gt;
+							&lt;/tr&gt;
+						&lt;tr&gt;
+							&lt;td&gt;td cell&lt;/td&gt;
+						&lt;/tr&gt;
+					&lt;/table&gt;
+				</code>
+			</pre>
+		<p>
+			resulterar i:
+		</p>
+			
+		<table>
+			<caption>Rubrik</caption>
+			<tr>
+				<th>th cell</th>
+			</tr>
+			<tr>
+				<td>td cell</td>
+			</tr>
+		</table>
+		
+
+		<h2>Bilder</h2>
+		<p>
+			Det finns flera sätt att göra detta på. Bland annat kan en bild länkas till som finns på nätet eller en bild på datorn som ligger i samma katalog som sidan med länken. img används för att visa att det är en bild och src hämtar från källan. Man kan även använda sig av alt som visar en bildtext ifall bilden inte kan visas.
+		</p>
+		<p>
+			Example: <code>&lt;img src="http://www.su.se/img/logo_su_se_big_dark_blue.gif" alt="Stockholm universitet"&gt;</code> visar denna bild: <img src="http://www.su.se/img/logo_su_se_big_dark_blue.gif" alt="Stockholm universitet">
+		</p>
+		<p>
+			Utöver img finns även map-taggen (<code>&lt;map&gt;</code>) och area-taggen (<code>&lt;area&gt;</code>). Dessa två definierar en bildkarta respektive ett klickbart område inuti en bildkarta. Area-taggen är dock alltid innästad i map-elementet.
+
+			Exempel: <img src="http://3.bp.blogspot.com/-tudA1oK6AHs/TfiUm9D40_I/AAAAAAAAAHw/COn9yos_zHE/s1600/earth+and+moon.png" alt="Earth and the Moon" usemap="#planet">
+
+			<map name="planet">
+				<area shape="circle" coords="370,306,270" alt="Earth" href="upg1_1.html">
+				<area shape="circle" coords="1181,302,70" alt="Earth" href="upg1_1.html">
+			</map>
+		</p>
+
+
+	</body>
+
+</html>

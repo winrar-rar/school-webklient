@@ -1,0 +1,41 @@
+#back-attach1 {
+	background-image: url(http://www.trs240.com/i/Decals/CD59-Birds.jpg); 
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	height: 100px;
+	background-size: cover;
+	overflow: auto;
+}
+#back-attach2 {
+	background-image: url(http://www.trs240.com/i/Decals/CD59-Birds.jpg); 
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100px;
+	overflow: auto;
+}
+#back-attach3 {
+	background-image: url(http://www.trs240.com/i/Decals/CD59-Birds.jpg); 
+	background-attachment: local;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100px;
+	overflow: auto;
+}
+#back-color {
+	background-color: lightgreen;
+	height: 100px;
+	overflow: auto;
+}
+#c-img {
+	float: left;
+}
+#clear {
+	clear: right;
+	margin: 10px;
+}
+#clear2 {
+	clear: right;
+	margin: 10px;
+}
+

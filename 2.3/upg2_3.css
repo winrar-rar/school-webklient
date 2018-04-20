@@ -1,0 +1,320 @@
+#p-top {
+	padding-top: 100px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+	padding-left: 50px;
+	background-color: lightgreen;
+}
+
+#p-right {
+	padding-top: 50px;
+	padding-right: 100px;
+	padding-bottom: 50px;
+	padding-left: 50px;
+	background-color: lightgreen;
+}
+
+#p-bot {
+	padding-top: 50px;
+	padding-right: 50px;
+	padding-bottom: 100px;
+	padding-left: 50px;
+	background-color: lightgreen;
+}
+
+#p-left {
+	padding-top: 50px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+	padding-left: 100px;
+	background-color: lightgreen;
+}
+
+#p-left {
+	padding-top: 50px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+	padding-left: 100px;
+	background-color: lightgreen;
+}
+
+#b-top {
+	padding-top: 50px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+	padding-left: 50px;
+	background-color: lightgreen;
+	
+	border-top-width: 10px;
+	border-top-style: solid;
+	border-top-color: red;
+}
+
+#b-right {
+	padding-top: 50px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+	padding-left: 50px;
+	background-color: lightgreen;
+}
+
+#b-bot {
+	padding-top: 50px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+	padding-left: 50px;
+	background-color: lightgreen;
+}
+
+#b-left {
+	padding-top: 50px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+	padding-left: 50px;
+	background-color: lightgreen;
+}
+
+
+#m-top {
+	margin-top: 1cm;
+}
+
+#m-right {
+	margin-right: 1cm;
+}
+
+#m-bot {
+	margin-bottom: 1cm;
+}
+
+#m-left {
+	margin-left: 1cm;
+}
+
+#dotted {
+	border-top-style: dotted;
+}
+
+#dashed {
+	border-top-style: dashed;
+}
+
+#solid {
+	border-top-style: solid;
+}
+
+#double {
+	border-top-style: double;
+}
+
+#groove {
+	border-top-style: groove;
+}
+
+#ridge {
+	border-top-style: ridge;
+}
+
+#inset {
+	border-top-style: inset;
+}
+
+#outset {
+	border-top-style: outset;
+}
+
+#none{
+	border-top-style: none;
+}
+
+#hidden {
+	border-top-style: hidden;
+}
+
+#thin {
+	border-top-style: solid; 
+	border-top-width: thin;
+}
+
+#medium {
+	border-top-style: solid; 
+	border-top-width: medium; 
+}
+
+#thick {
+	border-top-style: solid; 
+	border-top-width: thick; 
+}
+
+#red-t-c {
+	border-top-style: solid; 
+	border-top-width: thick; 
+	border-top-color: red;
+}
+
+#m1 {
+	background-color: lightgreen;
+}
+
+#m2 {
+	background-color: lightgreen;
+}
+
+#o-dotted {
+	outline-style: dotted;
+}
+
+#o-dashed {
+	outline-style: dashed;
+}
+
+#o-solid {
+	outline-style: solid;
+}
+
+#o-double {
+	outline-style: double;
+}
+
+#o-groove {
+	outline-style: groove;
+}
+
+#o-ridge {
+	outline-style: ridge;
+}
+
+#o-inset {
+	outline-style: inset;
+}
+
+#o-outset {
+	outline-style: outset;
+} 
+
+#o-none {
+	outline-style: none;
+}
+
+#o-hidden {
+	outline-style: hidden;
+}
+
+#o-thin {
+	outline-style: solid;
+	outline-width: thin;
+}
+
+#o-medium {
+	outline-style: solid;
+	outline-width: medium;
+}
+
+#o-thick {
+	outline-style: solid;
+	outline-width: thick;
+}
+
+#o-col {
+	outline-style: solid;
+	outline-color: red;
+}
+
+#vis {
+	visibility: visible;
+}
+
+#v-hidden {
+	visibility: hidden;
+}
+
+#collapse {
+	visibility: collapse;
+}
+
+#clip-bild {
+	position: absolute;
+	clip: rect(0px, 60px, 60px, 0px);
+}
+
+#display {
+	margin-top: 100px; 
+}
+
+#dis-in {
+	display: inline;
+}
+
+#dis-none {
+	display: none;
+}
+
+#over-visible {
+	width: 200px;
+	height: 200px;
+	overflow: visible;
+}
+
+#over-hidden {
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+}
+
+#over-scroll {
+	width: 200px;
+	height: 200px;
+	overflow: scroll;
+}
+
+#over-auto {
+	width: 200px;
+	height: 200px;
+	overflow: auto;
+}
+
+#trans {
+	opacity: 0.5;
+  	filter: alpha(opacity=50);
+}
+
+#border-r {
+	border: thin solid;
+    border-padding: 1px 4px; 
+    border-width: thin;
+    border-radius: 25px;
+    background-color: lightgreen; 
+}
+
+
+#multi-back {
+	background-image: url(http://www.trs240.com/i/Decals/CD59-Birds.jpg);
+	background-position: top; 
+	background-repeat: repeat; 
+}
+
+#bs-o {
+	background: lightgreen;
+	height: 50px;
+	width: 50px;
+	box-shadow: 5px 5px yellow;
+}
+
+#bs-i {
+	background: lightgreen;
+	height: 100px;
+	width: 100px;
+	box-shadow: 5px 5px 5px 1px yellow inset;
+}
+
+#lin-grad {
+	height: 200px;
+    background: red; /*ifall det inte stödjs*/
+    background: linear-gradient(to right, red , blue); /*Standard syntaxen*/ 
+}
+
+#rad-grad {
+	height: 200px;
+	background: red;
+	background: radial-gradient(circle, red, blue);
+}

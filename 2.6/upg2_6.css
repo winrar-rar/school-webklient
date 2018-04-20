@@ -1,0 +1,55 @@
+td{
+	border: solid;
+}
+#t-layout1 {
+	table-layout: auto;
+	border: solid;
+	width: 150px;
+
+}
+#t-layout2 {
+	table-layout: fixed;
+	border: solid;
+	width: 150px;
+}
+#t-layout3 {
+	border-collapse: separate;
+}
+#t-layout4 {
+	border-collapse: collapse;
+}
+#t-layout5 {
+	border-collapse: separate;
+	border: solid;
+	width: 150px;
+	border-spacing: 50px 50px;
+}
+#capt {
+	caption-side: top;
+}
+#capb {
+	caption-side: bottom;
+}
+#t-empty{
+	border-collapse: separate;
+	border: solid;
+	width: 150px;
+	empty-cells: hide;
+}
+#form {	
+	
+}
+#field{
+	width: 400px;
+	padding: 20px 0px 20px 20px;
+	background-image: url(birds.jpg);
+	color: orange;
+}
+#epost {
+	background-color: url("birds.jpg");
+	background-color: lightgreen;
+}
+#text {
+	background-color: lightgreen;
+	resize: none;
+}

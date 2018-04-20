@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+
+	<head>
+		<title>Uppgift 1.4</title>
+		<meta charset="utf-8">
+	</head>
+
+
+	<body>
+		<h1>Uppgift 1.4</h1>
+
+		<form id="upg1_4" action="http://people.dsv.su.se/~pierre/courses/05_ass/ip2/2/2.2.1/perl/example.cgi" method="get">
+			<fieldset>
+				<legend>Enrads textbox</legend>
+				Username: 	<input type="text" name="Username" placeholder="Text" pattern="[A-Za-z0-9]{1,10}" title="Endast engelska bokstäver och siffror" autofocus required><br>
+				Password: 	<input type="password" name="Password" placeholder="Password" pattern="[A-Za-z0-9]{1,10}" title="Endast engelska bokstäver och siffror" required>
+			</fieldset>
+
+			<fieldset>
+				<legend>Flerrads textbox:</legend>
+				<textarea name="Textarea" placeholder="Textarea"></textarea>
+			</fieldset>
+
+			<fieldset>
+				<legend>Checkbox:</legend>
+				<input type="checkbox" name="Checkbox1">Ett<br>
+				<input type="checkbox" name="Checkbox2">Två
+			</fieldset>
+
+			<fieldset>
+				<legend>Radio-knapp:</legend>
+				<input type="radio" name="Radioknapp" value="Ett">Ett<br>
+				<input type="radio" name="Radioknapp" value="Två">Två
+			</fieldset>
+
+			<fieldset>
+				<legend>Knappar:</legend>
+				<input type="submit" value="Submit"><br>
+				<input type="image" src="button.png" alt="Image button"><br>
+				<input type="reset" value="Reset"><br>
+				<input type="button" value="Button">
+			</fieldset>
+
+			<fieldset>
+				<legend>Lista:</legend>
+				<select name="Lista">
+					<optgroup label="Nummer på svenska">
+						<option value="Ett">Ett</option>
+						<option value="Två">Två</option>
+					</optgroup>
+					<optgroup label="Nummer på engelska">
+						<option value="One">One</option>
+						<option value="Two">Two</option>
+					</optgroup>
+				</select>
+			</fieldset>
+
+			<fieldset>
+				<legend>Nya HTML5 taggar</legend>
+				Email: <input type="email" name="Email"><br>
+				URL: <input type="url" name="URL"><br>
+				Nummer: <input type="number" name="Nummer" min="0" max="10" step="0.1"><br>
+				Range: <input type="range" name="Range" min="0" max="10" step="0.1"><br>
+				Datetime: <input type="datetime" name="Datetime"><br>
+				Date: <input type="date" name="Date"><br>
+				Månad: <input type="month" name="Månad"><br>
+				Vecka: <input type="week" name="Vecka"><br>
+				Tid: <input type="time" name="Tid"><br>
+				Keygen: <keygen name="Encryption">
+
+			</fieldset>
+
+			<fieldset>
+				<legend>Datalist test</legend>
+				Siffror: <input list="Siffror" name="Datalist">
+				<datalist id="Siffror">
+					<option label="Ett" value="Ett">Ett</option>
+					<option label="Två" value="Två">Två</option>
+					<option label="Tre" value="Tre">Tre</option>
+					<option label="Fyra" value="Fyra">Fyra</option>
+					<option label="Fem" value="Fem">Fem</option>
+				</datalist>
+			</fieldset>
+
+		</form>
+
+		<form action="http://people.dsv.su.se/~pierre/courses/05_ass/ip2/2/2.2.2/perl/example.cgi" method="post" enctype="multipart/form-data">
+			<fieldset>
+					<legend>Fil uppladdning</legend>
+					<input type="file" name="file">
+					<input type="submit" value="Submit">
+			</fieldset>
+
+
+
+		</form>
+
+
+
+	</body>
+
+</html>

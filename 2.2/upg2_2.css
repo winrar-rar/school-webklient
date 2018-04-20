@@ -1,0 +1,261 @@
+#Serif {
+	font-family: "Times New Roman", Georgia, Serif;
+}
+
+#Sans-Serif {
+	font-family: "Verdana", Geneva, Sans-serif;
+}
+
+#Monospace {
+	font-family: "Courier New", Courier, Monospace;
+}
+
+#xx-small {
+	font-size: xx-small;
+}
+
+#x-small {
+	font-size: x-small;
+}
+
+#small {
+	font-size: small;
+}
+
+#medium {
+	font-size: medium;
+}
+
+#large {
+	font-size: large;
+}
+
+#x-large {
+	font-size: x-large;
+}
+
+#xx-large {
+	font-size: xx-large;
+}
+
+#percent150 {
+	font-size: 150%;
+}
+
+#em2 {
+	font-size: 2em;
+}
+
+#red {
+	color: red;
+}
+
+#egen {
+	color: ff00ff;
+}
+
+#px {
+	font-size: 20px;
+}
+
+#em {
+	font-size: 2em;
+}
+
+#fadjust1 {
+	font-family: "Verdana", Geneva, Sans-serif;
+	font-size-adjust: 0.6;
+}
+
+#fadjust2 {
+	font-family: "Times New Roman", Georgia, Serif;
+	font-size-adjust: 0.6; 
+}
+
+#normal {
+	font-style: normal;
+}
+
+#italic {
+	font-style: italic;
+}
+
+#oblique {
+	font-style: oblique;
+}
+
+#vnormal {
+	font-variant: normal;
+}
+
+#vsmall-c {
+	font-variant: small-caps;
+}
+
+#wnormal {
+	font-weight: normal;
+}
+
+#wbold {
+	font-weight: bold;
+}
+
+#wbolder {
+	font-weight: bolder;
+}
+
+#wlighter {
+	font-weight: lighter;
+}
+
+#w100 {
+	font-weight: 100;
+}
+
+#w200 {
+	font-weight: 200;
+}
+
+#w300 {
+	font-weight: 300;
+}
+
+#w400 {
+	font-weight: 400;
+}
+
+#w500 {
+	font-weight: 500;
+}
+
+#w600 {
+	font-weight: 600;
+}
+
+#w700 {
+	font-weight: 700;
+}
+
+#w800 {
+	font-weight: 800;
+}
+
+#w900 {
+	font-weight: 900;
+}
+
+#letter-s1 {
+	letter-spacing: 3px;
+}
+
+#letter-s2 {
+	letter-spacing: -3px;
+} 
+
+#word-s {
+	word-spacing: 20px;
+}
+
+#sline-h {
+	line-height: 80%;
+}
+
+#bline-h {
+	line-height: 180%;
+}
+
+#right {
+	text-align: right;
+}
+
+#left {
+	text-align: left;
+}
+
+#center {
+	text-align: center;
+}
+
+#line-t {
+	text-decoration: line-through;
+}
+
+#underl {
+	text-decoration: underline;
+}
+
+#overl {
+	text-decoration: overline;
+}
+
+#text-shadow {
+	text-shadow: 2px 2px #FF00ff;
+}
+
+#text-ind {
+	text-indent: 20px;
+}
+
+#uppercase {
+	text-transform: uppercase;
+}
+
+#lowercase {
+	text-transform: lowercase;
+}
+
+#capitalize {
+	text-transform: capitalize;
+}
+
+#white-normal {
+	white-space: normal;
+}
+
+#nowrap {
+	white-space: nowrap;
+}
+
+#pre {
+	white-space: pre;
+}
+
+#pre-line {
+	white-space: pre-line;
+}
+
+#pre-wrap {
+	white-space: pre-wrap;
+}
+
+#first-line::first-line {
+	background-color: yellow;
+}
+
+#first-letter::first-letter {
+	font-size: 300%
+}
+
+#image {
+	list-style-image: url('checkbox_filled.gif');
+}
+
+#inside {
+	list-style-position: inside;
+}
+
+#outside {
+	list-style-position: outside;
+}
+
+#list-type1 {
+	list-style-type: upper-roman;
+}
+
+#list-type2 {
+	list-style-type: lower-alpha;
+}
+
+#list-type3 {
+	list-style-type: decimal-leading-zero;
+}
